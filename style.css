@@ -133,11 +133,98 @@ body {
 .hero-background {
     position: absolute;
     top: 0;
-    right: 0;
-    width: 50%;
+    left: 0;
+    width: 100%;
     height: 100%;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="20" opacity="0.1" fill="white"/><circle cx="80" cy="80" r="30" opacity="0.1" fill="white"/></svg>');
+    overflow: hidden;
+    pointer-events: none;
     z-index: -1;
+}
+
+.hero-orb {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    filter: blur(1px);
+    animation: floatCircle 18s ease-in-out infinite;
+    will-change: transform;
+}
+
+.orb-1 {
+    width: 220px;
+    height: 220px;
+    top: 4%;
+    left: 6%;
+    animation-duration: 22s;
+    --move-x-1: 18vw;
+    --move-y-1: 10vh;
+    --move-x-2: 42vw;
+    --move-y-2: 16vh;
+    --move-x-3: 24vw;
+    --move-y-3: 8vh;
+}
+
+.orb-2 {
+    width: 170px;
+    height: 170px;
+    top: 14%;
+    right: 10%;
+    animation-duration: 26s;
+    animation-delay: -6s;
+    --move-x-1: -14vw;
+    --move-y-1: 12vh;
+    --move-x-2: -28vw;
+    --move-y-2: 26vh;
+    --move-x-3: -10vw;
+    --move-y-3: 6vh;
+}
+
+.orb-3 {
+    width: 260px;
+    height: 260px;
+    bottom: 8%;
+    left: 18%;
+    animation-duration: 30s;
+    animation-delay: -12s;
+    --move-x-1: 22vw;
+    --move-y-1: -8vh;
+    --move-x-2: 36vw;
+    --move-y-2: -18vh;
+    --move-x-3: 10vw;
+    --move-y-3: -6vh;
+}
+
+.orb-4 {
+    width: 300px;
+    height: 300px;
+    bottom: 0;
+    right: -6%;
+    animation-duration: 34s;
+    animation-delay: -18s;
+    --move-x-1: -20vw;
+    --move-y-1: -12vh;
+    --move-x-2: -42vw;
+    --move-y-2: -24vh;
+    --move-x-3: -16vw;
+    --move-y-3: -10vh;
+}
+
+@keyframes floatCircle {
+    0% {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+    25% {
+        transform: translate3d(var(--move-x-1), var(--move-y-1), 0) scale(1.05);
+    }
+    50% {
+        transform: translate3d(var(--move-x-2), var(--move-y-2), 0) scale(0.95);
+    }
+    75% {
+        transform: translate3d(var(--move-x-3), var(--move-y-3), 0) scale(1.08);
+    }
+    100% {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
 }
 
 .hero-content {
