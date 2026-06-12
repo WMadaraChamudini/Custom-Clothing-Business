@@ -1377,3 +1377,20 @@ body {
 .portfolio-item {
     animation: fadeInUp 0.6s ease-out;
 }
+
+.service-more-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.service-more-card .service-icon {
+    font-size: 2rem;
+}
+
+.service-more-card .btn {
+    margin-top: 1rem;
+}
+
