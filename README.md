@@ -149,6 +149,30 @@ Update the iframe in `contact.html`:
 - **Font Awesome 6** - Icon library
 - **Google Fonts** (Segoe UI) - Typography
 
+## 📩 Sending form submissions via WhatsApp (server option)
+
+If you want the site to send WhatsApp messages without opening the WhatsApp app/web for the user, you can run a small server that uses the WhatsApp Cloud API (Meta). This requires a WhatsApp Business account and a registered app.
+
+Quick steps:
+
+1. Create a new Node.js server (example `server.js` provided in this repo).
+2. Copy `.env.example` to `.env` and set `WHATSAPP_TOKEN` and `WHATSAPP_PHONE_ID`.
+3. Install dependencies and run the server:
+
+```bash
+npm init -y
+npm install express node-fetch dotenv
+node server.js
+```
+
+4. The client will POST to `/api/send-whatsapp` with `{ phone, message }` and the server will forward the message via the WhatsApp Cloud API.
+
+Notes & requirements:
+- You need a registered Meta app and WhatsApp Business Account. See Meta docs: https://developers.facebook.com/docs/whatsapp/cloud-api
+- Messages to users who haven't opted in may require pre-approved templates. For testing with your own number, you can usually send free messages to numbers added in the WhatsApp sandbox or registered as testers.
+- This server example is minimal and not production hardened (no auth, rate-limiting, or logging). Use it as a starting point.
+
+
 ## 📱 Browser Support
 
 - Chrome (Latest)
