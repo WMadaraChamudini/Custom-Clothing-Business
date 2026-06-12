@@ -1,6 +1,17 @@
 const contactForm = document.getElementById('contactForm');
 const formMessage = document.getElementById('formMessage');
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
 
+if (hamburger && navMenu) {
+
+    hamburger.addEventListener('click', () => {
+
+        navMenu.classList.toggle('active');
+
+    });
+
+}
 if (contactForm) {
 
     contactForm.addEventListener('submit', async function (e) {
@@ -60,4 +71,5 @@ if (contactForm) {
             console.error(error);
         }
     });
+    
 }

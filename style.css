@@ -441,8 +441,9 @@ body {
 }
 
 /* ====================== PAGE HEADER ====================== */
+/* remove #D4A5A5 to make it more purple */
 .page-header {
-    background: linear-gradient(135deg, var(--primary-color), #A855A8);
+    background: linear-gradient(135deg, #8B4789, #D4A5A5);
     color: white;
     padding: 4rem 0;
     text-align: center;
