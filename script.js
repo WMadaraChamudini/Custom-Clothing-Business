@@ -7,10 +7,9 @@ if (contactForm) {
 
         e.preventDefault();
 
-        formMessage.style.display = 'block';
-        formMessage.style.background = '#f3e8f3';
-        formMessage.style.color = '#8B4789';
-        formMessage.textContent = 'Sending...';
+        formMessage.className = "form-message";
+        formMessage.textContent = "Sending...";
+        formMessage.style.display = "block";
 
         const formData = new FormData(contactForm);
         const object = Object.fromEntries(formData);
