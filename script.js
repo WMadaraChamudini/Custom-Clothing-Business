@@ -7,8 +7,10 @@ if (contactForm) {
 
         e.preventDefault();
 
-        formMessage.textContent = 'Sending...';
+        formMessage.style.display = 'block';
+        formMessage.style.background = '#f3e8f3';
         formMessage.style.color = '#8B4789';
+        formMessage.textContent = 'Sending...';
 
         const formData = new FormData(contactForm);
         const object = Object.fromEntries(formData);
@@ -32,19 +34,19 @@ if (contactForm) {
 
             if (response.ok && result.success) {
 
-                formMessage.textContent =
-                    'Thank you! Your message has been sent successfully.';
-
-                formMessage.style.color = 'green';
-
                 contactForm.reset();
+
+                formMessage.textContent =
+                    "Thank you for reaching out! We'll contact you soon.";
+
+                formMessage.className = "form-message success";
 
             } else {
 
                 formMessage.textContent =
-                    'Failed to send message. Please try again.';
+                    "Failed to send message. Please try again.";
 
-                formMessage.style.color = 'red';
+                formMessage.className = "form-message error";
 
                 console.error(result);
             }
@@ -52,9 +54,9 @@ if (contactForm) {
         } catch (error) {
 
             formMessage.textContent =
-                'Network error. Please try again.';
+                "Network error. Please try again.";
 
-            formMessage.style.color = 'red';
+            formMessage.className = "form-message error";
 
             console.error(error);
         }
