@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title>Office Wear Dress</title>
+  <desc>Stylized office dress illustration with a teal and rose palette.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a8edea"/>
+      <stop offset="100%" stop-color="#fed6e3"/>
+    </linearGradient>
+    <linearGradient id="dress" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e7fff9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="980" cy="170" r="160" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="220" cy="620" r="140" fill="rgba(255,255,255,0.1)"/>
+  <path d="M598 174c24 0 44 20 44 44v50c0 9 3 17 9 24l79 81c24 25 38 58 38 92v196c0 19-15 34-34 34H466c-19 0-34-15-34-34V465c0-34 14-67 38-92l79-81c6-7 9-15 9-24v-50c0-24 20-44 44-44h0z" fill="url(#dress)"/>
+  <path d="M518 248h164" stroke="rgba(64,110,103,0.35)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M500 372h200" stroke="rgba(64,110,103,0.22)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M388 694c74-30 146-44 212-44s138 14 212 44" fill="none" stroke="rgba(255,255,255,0.48)" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="600" cy="584" r="15" fill="#fed6e3"/>
+</svg>

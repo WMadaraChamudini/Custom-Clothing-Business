@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title>Designer Lehenga</title>
+  <desc>Stylized lehenga illustration with a royal blue and violet palette.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+    <linearGradient id="dress" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbfbff"/>
+      <stop offset="100%" stop-color="#dfe6ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="200" cy="160" r="130" fill="rgba(255,255,255,0.13)"/>
+  <circle cx="980" cy="640" r="170" fill="rgba(255,255,255,0.12)"/>
+  <path d="M598 172c24 0 44 20 44 44v45c0 10 4 20 10 27l79 81c24 25 37 56 37 91v214c0 19-15 34-34 34H466c-19 0-34-15-34-34V460c0-35 13-66 37-91l79-81c6-7 10-17 10-27v-45c0-24 20-44 44-44h0z" fill="url(#dress)"/>
+  <path d="M514 240c30 16 61 24 86 24s56-8 86-24" fill="none" stroke="rgba(118,75,162,0.3)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M450 414c52 22 100 33 150 33s98-11 150-33" fill="none" stroke="rgba(118,75,162,0.18)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M388 694c74-31 145-46 212-46s138 15 212 46" fill="none" stroke="rgba(255,255,255,0.46)" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="600" cy="582" r="15" fill="#667eea"/>
+  <circle cx="600" cy="582" r="42" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="8"/>
+</svg>

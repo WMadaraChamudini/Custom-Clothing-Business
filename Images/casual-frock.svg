@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title>Casual Frock</title>
+  <desc>Stylized frock illustration with a fresh green palette.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#43e97b"/>
+      <stop offset="100%" stop-color="#38f9d7"/>
+    </linearGradient>
+    <linearGradient id="dress" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4fffb"/>
+      <stop offset="100%" stop-color="#cbffe8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="930" cy="140" r="170" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="220" cy="680" r="130" fill="rgba(255,255,255,0.1)"/>
+  <path d="M600 178c26 0 48 21 48 48v47c0 11 4 22 12 30l78 79c24 24 37 56 37 89v219c0 17-14 31-31 31H456c-17 0-31-14-31-31V471c0-33 13-65 37-89l78-79c8-8 12-19 12-30v-47c0-27 22-48 48-48h0z" fill="url(#dress)"/>
+  <path d="M480 248c38 20 84 31 120 31s82-11 120-31" fill="none" stroke="rgba(56,121,110,0.35)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M455 468c51 19 100 28 145 28s94-9 145-28" fill="none" stroke="rgba(56,121,110,0.22)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M392 693c69-28 137-42 208-42s139 14 208 42" fill="none" stroke="rgba(255,255,255,0.42)" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="600" cy="582" r="15" fill="#38f9d7"/>
+</svg>

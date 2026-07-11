@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title>Founder Portrait</title>
+  <desc>Stylized founder portrait silhouette with a modern fashion palette.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f093fb"/>
+      <stop offset="100%" stop-color="#f5576c"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff8fc"/>
+      <stop offset="100%" stop-color="#ffd6e2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="950" cy="160" r="170" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="220" cy="640" r="140" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="600" cy="262" r="102" fill="rgba(255,255,255,0.88)"/>
+  <path d="M460 622c0-90 62-166 140-166s140 76 140 166v48H460z" fill="url(#shirt)"/>
+  <path d="M500 402c34 34 66 51 100 51s66-17 100-51" fill="none" stroke="rgba(139,71,137,0.32)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M520 418l80 80 80-80" fill="none" stroke="rgba(139,71,137,0.22)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="560" cy="255" r="12" fill="#f5576c"/>
+  <circle cx="640" cy="255" r="12" fill="#f5576c"/>
+  <path d="M560 300c18 16 38 24 40 24s22-8 40-24" fill="none" stroke="rgba(139,71,137,0.26)" stroke-width="10" stroke-linecap="round"/>
+</svg>
