@@ -2,7 +2,27 @@
   "dependencies": {
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
+    "node-fetch": "^3.3.2",
     "nodemailer": "^8.0.11",
     "resend": "^6.12.4"
-  }
+  },
+  "name": "custom-clothing-business",
+  "version": "1.0.0",
+  "description": "A modern, professional business portfolio website for \"Fashion By Nilu,\" a premium custom tailoring startup by master tailor Nilu.",
+  "main": "script-client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WMadaraChamudini/Custom-Clothing-Business.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/WMadaraChamudini/Custom-Clothing-Business/issues"
+  },
+  "homepage": "https://github.com/WMadaraChamudini/Custom-Clothing-Business#readme"
 }
